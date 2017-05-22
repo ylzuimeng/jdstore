@@ -12,4 +12,13 @@ class Order < ApplicationRecord
   validates :billing_address, presence: true
   validates :shipping_name, presence: true
   validates :shipping_address, presence: true
+
+  def set_payment_with!(method)
+    self.update_column(payment_method: method)
+
+  end
+
+  def pay!
+    self.update_column(is_paid: true )
+  end
 end
