@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap/alert
 //= require bootstrap/dropdown
+//= require bootstrap-sprockets
 //= require autosize.min
 //= require jquery.countdown.min
 //= require_tree .
