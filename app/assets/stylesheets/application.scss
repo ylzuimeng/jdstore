@@ -40,6 +40,7 @@
 
   .navbar-default .navbar-nav > li > a {
       color: #EF6C00;
+
   }
 
   .navbar-default .navbar-nav > li > a:hover,
@@ -144,6 +145,12 @@
    }
    .product-list-style-img {                             //文字 块样式整形
      margin-bottom: 1.2em;
+     padding: 10px;
+     background: #fff;
+     margin-top: 20px;
+     position: relative;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); //图片增加shadow
+
    }
    .all-product-box {
      margin-bottom: 3em;
@@ -154,3 +161,9 @@
   padding-top: 7px;
 
 }
+// .product-item {
+//     padding: 10px;
+//     background: #fff;
+//     margin-top: 20px;
+//     position: relative;
+// }
