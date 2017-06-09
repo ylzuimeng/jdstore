@@ -33,6 +33,52 @@
     </div>
 </div>
 
+<!-- comments 页面 韵儿爸爸 -->
+<div class="container mt30">
+    <div class="row">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active">
+          <a href="#tab_default_1" data-toggle="tab">商品详情</a>
+        </li>
+        <li>
+          <a href="#tab_default_2" data-toggle="tab">用户评价</a>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content">
+        <!-- 商品详情区域 -->
+        <div class=" row tab-pane active" id="tab_default_1">
+          <%= simple_format(@product.title) %>
+        </div>
+
+          <!-- 商品评论区域 -->
+        <div class="product-particulars-box row tab-pane" id="tab_default_2">
+          <% if @product.comments.blank? %>
+            <p class="tr">这个商品还没有人评论，来为ta添加一个吧！</p>
+            <%= render "comments/form" %>
+          <% else %>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>评论内容</th>
+                    <th>发表用户</th>
+                    <th>发表时间</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @comments.each do |comment| %>
+                    <tr>
+                      <td><%= comment.content %></td>
+                      <td><%= comment.user.email %></td>
+                      <td><%= comment.created_at %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+            </table>
+            <% end %>
+          </div>
+     </div>
+</div>
 
 
 

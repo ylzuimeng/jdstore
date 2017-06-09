@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   end
 
   resources :products do
+    resources  :comments
     member do
       post :add_to_cart
     end
@@ -30,6 +31,7 @@ Rails.application.routes.draw do
       delete :clean
       post :checkout
     end
+
   end
 
   resources :cart_items

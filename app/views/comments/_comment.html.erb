@@ -1,0 +1,11 @@
+<div id="comment-<%= comment.id %>" class="panel panel-default">
+  <div class="panel-heading"><%= comment.user.display_name %></div>
+  <div class="panel-body">
+    <%= comment.content %>
+    <% if current_user && comment.user == current_user %>
+    <p class="text-right">
+      <%= link_to "Delete", comment_path(comment), :data => { :confirm => "Are you Sure?" }, :class => "delete-comment btn btn-small" %>
+    </p>
+    <% end %>
+  </div>
+</div>
