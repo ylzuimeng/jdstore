@@ -1,4 +1,89 @@
-<div class="col-md-12">
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+</head>
+<body>
+  <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                  <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                  <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper For Slides -->
+              <div class="carousel-inner" role="listbox">
+
+                  <!-- Third Slide -->
+                  <div class="item active">
+
+                      <!-- Slide Background -->
+                      <img src="https://ws1.sinaimg.cn/large/006tNc79gy1fgb7yxfy8hj31kw11xe86.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <div class="bs-slider-overlay"></div>
+
+                      <div class="container">
+                          <div class="row">
+                              <!-- Slide Text Layer -->
+                              <div class="slide-text slide_style_left">
+                                  <h1 data-animation="animated zoomInRight">幸福的家庭</h1>
+                                  <p data-animation="animated fadeInLeft">就是他拉着你的手，握着我的手</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End of Slide -->
+
+                  <!-- Second Slide -->
+                  <div class="item">
+
+                      <!-- Slide Background -->
+                      <img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fgfw07dz38j30zk0npqle.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <div class="bs-slider-overlay"></div>
+                      <!-- Slide Text Layer -->
+                      <div class="slide-text slide_style_center">
+                          <h1 data-animation="animated flipInX">专业的生殖咨询机构</h1>
+                          <p data-animation="animated lightSpeedIn">悉心的呵护，全程为您护航</p>
+                      </div>
+                  </div>
+                  <!-- End of Slide -->
+
+                  <!-- Third Slide -->
+                  <div class="item">
+
+                      <!-- Slide Background -->
+                      <img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fgfwclaa1cj318g0rs0w5.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <div class="bs-slider-overlay"></div>
+                      <!-- Slide Text Layer -->
+                      <div class="slide-text slide_style_right">
+                          <h1 data-animation="animated zoomInLeft">完美天使</h1>
+                          <p data-animation="animated fadeInRight">一个宝宝，完整一个家</p>
+                      </div>
+                  </div>
+                  <!-- End of Slide -->
+
+
+              </div><!-- End of Wrapper For Slides -->
+
+              <!-- Left Control -->
+              <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                  <span class="fa fa-angle-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+
+              <!-- Right Control -->
+              <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                  <span class="fa fa-angle-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+
+          </div> <!-- End  bootstrap-touch-slider Slider -->
+
+
+
+
+
+<!-- <div class="col-md-12">
    <div class="row box">
      <div class="box-inner col-md-6 col-md-offset-3">
        <h1 class="title">完美天使</h1>
@@ -13,7 +98,7 @@
        </p>
      </div>
    </div>
- </div>
+ </div> -->
 
  <div class="content-section-a">
    <div class="container">
@@ -62,3 +147,21 @@
      </div>
    </div>
  </div>
+
+ </body>
+ <!-- Script to Activate the Carousel -->
+       <script>
+         $('.carousel').carousel({
+             interval: 5000 //changes the speed
+         })
+         $('#bootstrap-touch-slider').bsTouchSlider();
+       </script>
+
+      <script>
+         $(document).ready(function () {
+         $('.material-button-toggle').click(function () {
+             $(this).toggleClass('open');
+             $('.option').toggleClass('scale-on');
+         });
+        });
+     </script>
